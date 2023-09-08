@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Diphylleia&family=Nanum+Myeongjo&family=Oswald:wght@200&family=Pacifico&family=Raleway:wght@100&family=Roboto+Slab:wght@300&display=swap');
 
 
+html{
+    height: 100%;
+}
+
+
 body{
+    height: 100%;
+    transition: 0.5s;
+}
+.w-mode-body{
+    background-color: white;
+}
+.d-mode-body{
     background-color: gray;
 }
 
-.top{
+
+.d-mode-top{
     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('https://t4.ftcdn.net/jpg/02/88/03/43/360_F_288034327_i8AjYSPAQgUFbB0RZIbrnR9g19aMWw24.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em;
     color: white;
+    transition: 0.5s;
 }
-
+.w-mode-top{
+    background-image:  linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3) ),url('https://t4.ftcdn.net/jpg/02/88/03/43/360_F_288034327_i8AjYSPAQgUFbB0RZIbrnR9g19aMWw24.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    color: black;
+    transition: 0.5s;
+}
 
 .top-first-line{
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 .date-area{
     text-align: center;
@@ -34,11 +56,21 @@ body{
 .top-last-line{
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 .mode-change-text{
     text-align: center;
 }
-.mode-change-button{
+.w-mode-change-button{
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.d-mode-change-button{
+    background-color: white;
+    border: 3px solid black;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -52,45 +84,122 @@ body{
 .main-container{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
-.main{
+
+.d-mode-main{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color: white;
+    height: 100%;
+    transition: 0.5s;
 }
 
-.main > h2{
+.d-mode-main > h2{
     margin-top : 0.5em;
     padding-bottom: 0.3em;
     border-bottom: 2px solid white;
     font-family: 'Pacifico', cursive;
 }
+
+.w-mode-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 218, 218);
+    color: black;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.w-mode-main > h2{
+    margin-top : 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid black;
+    font-family: 'Pacifico', cursive;
+}
+
 .navigation{
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 1em;
+    position: relative;
 }
 
-.navigation > button{
+
+.d-mode-main > .navigation > button {
     background-color: transparent;
     color: white;
     border: none;
     font-family: 'Pacifico', cursive;
+    transition: 0.5s;
 }
+
+.w-mode-main > .navigation > button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-family: 'Pacifico', cursive;
+    transition: 0.5;
+}
+
+
 .list-container{
     width: 100%;
+}
+
+.d-mode-list-item{
+    background-color: gray;
+    border: 2px solid transparent; 
+}
+.w-mode-list-item{
+    background-color: lightgray;
+    border: 2px solid black; 
 }
 .list-item{
     padding: 1em;
     margin: 0.3em;
     border-radius: 5px;
-    background-color: gray;
     color: black;
     font-weight: bold;
     font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+}
 
+.w-mode-nav-underBar{
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background-color: black;
+    transition: 0.5s;
+}
+.d-mode-nav-underBar{
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+.stopWatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stopWatch > *{
+    margin: 3px;
+}
+
+
+@media screen and (max-width : 450px) {
+    .top-first-line{
+        font-size: 0.8em;
+    }
+    .top-last-line{
+        font-size: 0.8em;
+    }
 }

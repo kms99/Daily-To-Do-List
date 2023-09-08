@@ -16,9 +16,9 @@
     ></script>
     <title>Document</title>
   </head>
-  <body>
+  <body class="d-mode-body">
     <div class="container main-container">
-      <div class="top">
+      <div class="d-mode-top" id="topArea">
         <div class="top-first-line">
           <div>
             <div class="date-area">2023-08-31</div>
@@ -33,7 +33,7 @@
         <div class="top-last-line">
           <div>
             <div class="mode-change-text">Mode<br />change</div>
-            <button class="mode-change-button"></button>
+            <button class="d-mode-change-button" id="changeModeBtn"></button>
           </div>
 
           <div class="weather-area">
@@ -43,54 +43,50 @@
         </div>
       </div>
 
-      <div class="main">
+      <div class="d-mode-main" id="mainContainer">
         <h2>Do your best!</h2>
-        <div class="navigation">
+        <div class="navigation" id="navigation">
           <button>All</button>
           <button>Done</button>
           <button>Not Done</button>
+
+          <div class="d-mode-nav-underBar" id="nav-underBar"></div>
         </div>
         <div class="list-container">
-          <div class="list-item row">
+          
+          <div class="d-mode-list-item row list-item">
             <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
+            <div class="col-md-6" id="item-title">잠자기</div>
+            <div class="col-md-4 stopWatch" id="stopWatch">
+              <i class="fa-regular fa-clock stopWatchBtn" id="stopWatchBtn"></i>
+              <div>00:00:00</div>
+              <i class="fa-solid fa-play" id="playBtn"></i>
+              <i class="fa-solid fa-pause" id="pauseBtn"></i>
+            </div>
             <i class="fa-regular fa-square-check col-md-1"></i>
           </div>
-          <div class="list-item row">
+
+
+          <div class="d-mode-list-item row list-item">
             <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
+            <div class="col-md-6" id="item-title">코딩하기</div>
+            <div class="col-md-4 stopWatch" id="stopWatch">
+              <i class="fa-regular fa-clock stopWatchBtn" id="stopWatchBtn"></i>
+              <div>00:00:00</div>
+              <i class="fa-solid fa-play" id="playBtn"></i>
+              <i class="fa-solid fa-pause" id="pauseBtn"></i>
+            </div>
             <i class="fa-regular fa-square-check col-md-1"></i>
           </div>
-          <div class="list-item row">
+          <div class="d-mode-list-item row list-item">
             <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
-          <div class="list-item row">
-            <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
-          <div class="list-item row">
-            <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
-          <div class="list-item row">
-            <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
-          <div class="list-item row">
-            <div class="col-md-1">1</div>
-            <div class="col-md-9">코딩하기</div>
-            <i class="fa-regular fa-clock col-md-1"></i>
+            <div class="col-md-6" id="item-title">달리기</div>
+            <div class="col-md-4 stopWatch" id="stopWatch">
+              <i class="fa-regular fa-clock stopWatchBtn" id="stopWatchBtn"></i>
+              <div>00:00:00</div>
+              <i class="fa-solid fa-play" id="playBtn"></i>
+              <i class="fa-solid fa-pause" id="pauseBtn"></i>
+            </div>
             <i class="fa-regular fa-square-check col-md-1"></i>
           </div>
         </div>
