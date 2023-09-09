@@ -45,6 +45,18 @@
 
       <div class="d-mode-main" id="mainContainer">
         <h2>Do your best!</h2>
+
+        <div  class="add-area" id="add-area">
+          <div class="add-area-open" id='add-area-open'>
+            <i class="fa-solid fa-plus"></i>
+            추가하기
+          </div>
+          <div class="add-input" id="add-input">
+            <input class="user-input" id="user-input">
+            <button class="user-add" id="add-btn">추가</button>
+          </div>
+        </div>
+
         <div class="navigation" id="navigation">
           <button>All</button>
           <button>Done</button>
@@ -52,44 +64,8 @@
 
           <div class="d-mode-nav-underBar" id="nav-underBar"></div>
         </div>
-        <div class="list-container">
-          
-          <div class="d-mode-list-item row list-item">
-            <div class="col-md-1">1</div>
-            <div class="col-md-6" id="item-title">잠자기</div>
-            <div class="col-md-4 stopWatch" id="stopWatch">
-              <i class="fa-regular fa-clock stopWatchBtn" id="stopWatchBtn"></i>
-              <div>00:00:00</div>
-              <i class="fa-solid fa-play" id="playBtn"></i>
-              <i class="fa-solid fa-pause" id="pauseBtn"></i>
-            </div>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
 
-
-          <div class="d-mode-list-item row list-item">
-            <div class="col-md-1">1</div>
-            <div class="col-md-6" id="item-title">코딩하기</div>
-            <div class="col-md-4 stopWatch" id="stopWatch">
-              <i class="fa-regular fa-clock stopWatchBtn" id="stopWatchBtn"></i>
-              <div>00:00:00</div>
-              <i class="fa-solid fa-play" id="playBtn"></i>
-              <i class="fa-solid fa-pause" id="pauseBtn"></i>
-            </div>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
-          <div class="d-mode-list-item row list-item">
-            <div class="col-md-1">1</div>
-            <div class="col-md-6" id="item-title">달리기</div>
-            <div class="col-md-4 stopWatch" id="stopWatch">
-              <i class="fa-regular fa-clock stopWatchBtn" id="stopWatchBtn"></i>
-              <div>00:00:00</div>
-              <i class="fa-solid fa-play" id="playBtn"></i>
-              <i class="fa-solid fa-pause" id="pauseBtn"></i>
-            </div>
-            <i class="fa-regular fa-square-check col-md-1"></i>
-          </div>
-        </div>
+        <div class="list-container" id="list-area"></div>
       </div>
     </div>
   </body>

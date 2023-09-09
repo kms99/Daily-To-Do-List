@@ -96,6 +96,46 @@ body{
     color: white;
     height: 100%;
     transition: 0.5s;
+    position: relative;
+}
+
+.w-mode-main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 218, 218);
+    color: black;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.add-area{
+    position: absolute;
+    right: 0;
+    margin: 1.2em;
+    display: flex;
+}
+.add-area-open{
+    height: fit-content;
+}
+.add-area-open:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-input{
+    overflow: hidden; 
+    transition: 0.5s;
+    max-width: 0px;
+    margin-left: 1em;
+    display: flex;
+}
+.add-input *{
+    transition: 0.5s;
+    height: 1.8em;
+    margin-right: 0.5em;
 }
 
 .d-mode-main > h2{
@@ -105,15 +145,7 @@ body{
     font-family: 'Pacifico', cursive;
 }
 
-.w-mode-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(219, 218, 218);
-    color: black;
-    height: 100%;
-    transition: 0.5s;
-}
+
 
 .w-mode-main > h2{
     margin-top : 0.5em;
@@ -200,6 +232,10 @@ body{
         font-size: 0.8em;
     }
     .top-last-line{
+        font-size: 0.8em;
+    }
+    .add-area{
+        position: initial;
         font-size: 0.8em;
     }
 }
